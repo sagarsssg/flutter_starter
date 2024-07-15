@@ -19,6 +19,7 @@ class AppLocalization {
 
   static final Map<String, Map<String, String>> _localisedValues = {
     AppLocale.kEnglish: EnglishLocalization.localization,
+    AppLocale.kHindi: HindiLocalization.localization
   };
 
   String getText(String tag) {

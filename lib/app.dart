@@ -57,6 +57,7 @@ class _MyAppState extends State<MyApp> {
               Locale(AppLocale.kEnglish),
               Locale(AppLocale.kHindi)
             ],
+            locale: const Locale(AppLocale.kHindi),
           );
         });
   }

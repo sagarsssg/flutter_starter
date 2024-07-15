@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_starter/localization/app_localization.dart';
 
 @RoutePage()
 class DashboardPage extends StatelessWidget {
@@ -7,9 +8,9 @@ class DashboardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("Dashboard"),
+        child: Text(AppLocalization.kLogin.translation(context)),
       ),
     );
   }
