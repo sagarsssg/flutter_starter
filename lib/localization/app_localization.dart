@@ -22,6 +22,11 @@ class AppLocalization {
     AppLocale.kHindi: HindiLocalization.localization
   };
 
+  static void updateLocalizationValue(
+      String locale, Map<String, String> localization) {
+    _localisedValues[locale]?.addAll(localization);
+  }
+
   String getText(String tag) {
     if ((_localisedValues.containsKey(locale.languageCode)) &&
         (_localisedValues[locale.languageCode]?.containsKey(tag) ?? false)) {
