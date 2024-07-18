@@ -8,7 +8,7 @@ import 'app.dart';
 
 Future<void> main() async {
   const String environment =
-      String.fromEnvironment('app.flavor', defaultValue: Environment.PROD);
+  String.fromEnvironment('app.flavor', defaultValue: Environment.PROD);
   Environment().initConfig(environment);
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   Repo.initRepo();
